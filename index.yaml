@@ -1,0 +1,43 @@
+apiVersion: v1
+entries:
+  opentelemetry-demo:
+  - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2024-03-16T00:17:21.133532124Z"
+    dependencies:
+    - condition: opentelemetry-collector.enabled
+      name: opentelemetry-collector
+      repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+      version: 0.83.0
+    - condition: jaeger.enabled
+      name: jaeger
+      repository: https://jaegertracing.github.io/helm-charts
+      version: 1.0.2
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.17.0
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.3.6
+    - condition: opensearch.enabled
+      name: opensearch
+      repository: https://opensearch-project.github.io/helm-charts
+      version: 2.18.0
+    description: opentelemetry demo helm chart
+    digest: 4c3f73598589cac92562532f08027c78c3b5b3c9a7e804ead863926aa3005410
+    home: https://opentelemetry.io/
+    icon: https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png
+    maintainers:
+    - name: dmitryax
+    - name: puckpuck
+    - name: tylerhelmuth
+    name: opentelemetry-demo
+    sources:
+    - https://github.com/open-telemetry/opentelemetry-demo
+    type: application
+    urls:
+    - opentelemetry-demo-0.30.0.tgz
+    version: 0.30.0
+generated: "2024-03-16T00:17:21.077961318Z"
